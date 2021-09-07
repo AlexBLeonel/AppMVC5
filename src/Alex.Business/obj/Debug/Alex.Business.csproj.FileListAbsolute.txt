@@ -1,0 +1,6 @@
+D:\Repositórios\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.AssemblyReference.cache
+D:\Repositórios\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.CoreCompileInputs.cache
+D:\Repositórios\appMVC5\src\Alex.Business\bin\Debug\Alex.Business.dll
+D:\Repositórios\appMVC5\src\Alex.Business\bin\Debug\Alex.Business.pdb
+D:\Repositórios\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.dll
+D:\Repositórios\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.pdb
