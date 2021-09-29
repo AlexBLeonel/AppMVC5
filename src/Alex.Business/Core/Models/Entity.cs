@@ -9,7 +9,6 @@ namespace Alex.Business.Core.Models {
         protected Entity() {
             Id = Guid.NewGuid();
         }
-
         public Guid Id { get; set; }
     }
 }

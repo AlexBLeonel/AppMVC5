@@ -15,8 +15,7 @@ namespace Alex.Infra.Data.Mappings {
             HasKey(f => f.Id);
 
             Property(f => f.Nome)
-                .IsRequired()
-                .HasMaxLength(200);
+                .IsRequired();
 
             Property(f => f.Documento)
                 .IsRequired()
@@ -28,6 +27,9 @@ namespace Alex.Infra.Data.Mappings {
             HasRequired(f => f.Endereco)
                 // Define o relacionamento para 1
                 .WithRequiredPrincipal(e => e.Fornecedor);
+
+            Property(f => f.Deleted_at)
+                .IsOptional();
 
             ToTable("Fornecedores");
         }

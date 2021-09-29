@@ -20,19 +20,16 @@ namespace Alex.Infra.Data.Mappings {
                 .HasMaxLength(10);
 
             Property(e => e.Complemento)
-                .HasMaxLength(200);
+                .HasMaxLength(50);
 
             Property(e => e.Bairro)
-                .IsRequired()
-                .HasMaxLength(100);
+                .IsRequired();
 
             Property(e => e.Cidade)
-                .IsRequired()
-                .HasMaxLength(150);
+                .IsRequired();
 
             Property(e => e.Estado)
-                .IsRequired()
-                .HasMaxLength(80);
+                .IsRequired();
 
             Property(e => e.CEP)
                 .IsRequired()

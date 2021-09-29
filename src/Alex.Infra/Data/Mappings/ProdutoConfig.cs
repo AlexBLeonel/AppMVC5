@@ -12,8 +12,8 @@ namespace Alex.Infra.Data.Mappings {
             HasKey(p => p.Id);
 
             Property(p => p.Nome)
-                .IsRequired()
-                .HasMaxLength(100);
+                .IsRequired();
+            // Tamanho definido genericamente no contexto AppDB
 
             Property(p => p.Valor)
                 .IsRequired();

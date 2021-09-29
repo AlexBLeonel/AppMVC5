@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Alex.Business.Core.Data {
     // Interface não se herda, se implementa.
-    internal interface IRepository<TEntity> : IDisposable where TEntity : Entity {
+    // A Interface define o que vai ser implementado e não como
+    public interface IRepository<TEntity> : IDisposable where TEntity : Entity {
         Task Add(TEntity entity);
         Task<TEntity> GetById(Guid id);
         Task<List<TEntity>> GetAll();

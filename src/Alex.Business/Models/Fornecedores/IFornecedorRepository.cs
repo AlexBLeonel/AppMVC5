@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Alex.Business.Models.Fornecedores {
-    interface IFornecedorRepository : IRepository<Fornecedor> {
+    public interface IFornecedorRepository : IRepository<Fornecedor> {
         // Retorna o Fornecedor e seu Endereço
         Task<Fornecedor> GetFornecedorEndereco(Guid id);
 

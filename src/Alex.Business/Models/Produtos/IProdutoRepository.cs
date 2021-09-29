@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Alex.Business.Models.Produtos {
-    interface IProdutoRepository : IRepository<Produto> {
+    public interface IProdutoRepository : IRepository<Produto> {
         // Obtém uma lista produtos de um fornecedor
         Task<IEnumerable<Produto>> GetProdutosByFornecedor(Guid FornecedorId);
 
