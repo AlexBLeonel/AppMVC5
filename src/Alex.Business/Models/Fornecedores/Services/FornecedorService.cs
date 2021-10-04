@@ -1,4 +1,5 @@
-﻿using Alex.Business.Core.Services;
+﻿using Alex.Business.Core.Notifications;
+using Alex.Business.Core.Services;
 using Alex.Business.Models.Fornecedores.Validation;
 using System;
 using System.Linq;
@@ -10,7 +11,9 @@ namespace Alex.Business.Models.Fornecedores.Services {
         private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IEnderecoRepository _enderecoRepository;
 
-        public FornecedorService(IFornecedorRepository fornecedorRepository, IEnderecoRepository enderecoRepository) {
+        public FornecedorService(IFornecedorRepository fornecedorRepository, 
+                                 IEnderecoRepository enderecoRepository,
+                                 INotifier notifier) : base(notifier) {
             _fornecedorRepository = fornecedorRepository;
             _enderecoRepository   = enderecoRepository;
         }
@@ -31,6 +34,7 @@ namespace Alex.Business.Models.Fornecedores.Services {
         public async Task Remove(Guid id) {
             var fornecedor = await _fornecedorRepository.GetFornecedorProdutosEndereco(id);
             if (fornecedor.Produtos.Any()) {
+                Notify("O fornecedor possui produtos cadastrados!");
                 return;
             } else {
                 if (fornecedor.Endereco != null) {
@@ -54,7 +58,15 @@ namespace Alex.Business.Models.Fornecedores.Services {
 
         public async Task<bool> FornecedorAlreadyExists(Fornecedor fornecedor) {
             var check = await _fornecedorRepository.Search(f => f.Documento == fornecedor.Documento && f.Id != fornecedor.Id);
-            return check.Any();
+
+            if (check.Any())
+            {
+                Notify("O documento informado já pertence a outro fornecedor.");
+                return true;
+            } else
+            {
+                return false;
+            }
         }
 
         public async Task UpdateEndereco(Endereco endereco) {

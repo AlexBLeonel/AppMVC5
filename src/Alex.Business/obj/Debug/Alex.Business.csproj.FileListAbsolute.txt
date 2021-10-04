@@ -4,3 +4,12 @@ D:\Repositórios\appMVC5\src\Alex.Business\bin\Debug\Alex.Business.dll
 D:\Repositórios\appMVC5\src\Alex.Business\bin\Debug\Alex.Business.pdb
 D:\Repositórios\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.dll
 D:\Repositórios\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.pdb
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\bin\Debug\Alex.Business.dll
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\bin\Debug\Alex.Business.pdb
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\bin\Debug\FluentValidation.dll
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\bin\Debug\FluentValidation.xml
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.AssemblyReference.cache
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.CoreCompileInputs.cache
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.CopyComplete
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\obj\Debug\Alex.Business.dll
+C:\REPOSITORIO\Outros\Cursos\AppMVC5\src\Alex.Business\obj\Debug\Alex.Business.pdb

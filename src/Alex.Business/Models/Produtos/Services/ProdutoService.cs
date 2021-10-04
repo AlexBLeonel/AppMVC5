@@ -1,4 +1,5 @@
-﻿using Alex.Business.Core.Services;
+﻿using Alex.Business.Core.Notifications;
+using Alex.Business.Core.Services;
 using Alex.Business.Models.Produtos.Validations;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,8 @@ namespace Alex.Business.Models.Produtos.Services {
     public class ProdutoService : BaseService, IProdutoService {
         private readonly IProdutoRepository _produtoRepository;
 
-        public ProdutoService(IProdutoRepository produtoRepository) {
+        public ProdutoService(IProdutoRepository produtoRepository, 
+                              INotifier notifier) : base(notifier) {
             _produtoRepository = produtoRepository;
         }
 

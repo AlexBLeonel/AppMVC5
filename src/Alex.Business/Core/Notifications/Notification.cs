@@ -10,7 +10,6 @@ namespace Alex.Business.Core.Notifications {
             Message = message;
         }
 
-        string Message { get; set;
-        }
+        string Message { get; set; }
     }
 }
