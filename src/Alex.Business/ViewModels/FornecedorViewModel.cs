@@ -8,12 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static Alex.Business.Models.Fornecedores.Fornecedor;
 
-namespace Alex.Business.ViewModels
-{
-    public class FornecedorViewModel
-    {
-        public FornecedorViewModel()
-        {
+namespace Alex.Business.ViewModels {
+    public class FornecedorViewModel {
+        public FornecedorViewModel() {
             Id = Guid.NewGuid();
         }
 

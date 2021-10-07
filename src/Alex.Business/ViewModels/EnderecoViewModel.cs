@@ -3,12 +3,9 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
-namespace Alex.Business.ViewModels
-{
-    public class EnderecoViewModel
-    {
-        public EnderecoViewModel()
-        {
+namespace Alex.Business.ViewModels {
+    public class EnderecoViewModel {
+        public EnderecoViewModel() {
             Id = Guid.NewGuid();
         }
 

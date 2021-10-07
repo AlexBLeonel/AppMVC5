@@ -7,12 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace Alex.Business.ViewModels
-{
-    public class ProdutoViewModel
-    {
-        public ProdutoViewModel()
-        {
+namespace Alex.Business.ViewModels {
+    public class ProdutoViewModel {
+        public ProdutoViewModel() {
             Id = Guid.NewGuid();
         }
 
