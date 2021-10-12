@@ -29,8 +29,8 @@ namespace Alex.Business.ViewModels {
         [DisplayName("Descrição")]
         public string Descricao { get; set; }
 
-        [DisplayName("Imagem do Produto")]
-        public HttpPostedFileBase UploadImagem { get; set; }
+        //[DisplayName("Imagem do Produto")]
+        //public HttpPostedFileBase UploadImagem { get; set; }
 
         public string Imagem { get; set; }
 
@@ -47,11 +47,11 @@ namespace Alex.Business.ViewModels {
         /*
          * Fornecedor que representa o produto
          */
-        public FornecedorViewModel fornecedor { get; set; }
+        //public FornecedorViewModel fornecedor { get; set; }
 
-        /*
-         * Lista de fornecedores para popular input select de fornecederes
-         */
-        public IEnumerable<FornecedorViewModel> fornecedores { get; set; }
+        ///*
+        // * Lista de fornecedores para popular input select de fornecederes
+        // */
+        //public IEnumerable<FornecedorViewModel> fornecedores { get; set; }
     }
 }

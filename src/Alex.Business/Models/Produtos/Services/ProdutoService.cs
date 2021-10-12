@@ -2,9 +2,6 @@
 using Alex.Business.Core.Services;
 using Alex.Business.Models.Produtos.Validations;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Alex.Business.Models.Produtos.Services {

@@ -36,8 +36,8 @@ D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\bin\Debug\pt-br\Sys
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\bin\Debug\pt-br\System.Web.WebPages.resources.dll
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\bin\Debug\pt-br\System.Web.WebPages.Deployment.resources.dll
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\bin\Debug\pt-br\System.Web.WebPages.Razor.resources.dll
-D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.AssemblyReference.cache
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.CoreCompileInputs.cache
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.CopyComplete
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.dll
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.pdb
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.Business\obj\Debug\Alex.Business.csproj.AssemblyReference.cache

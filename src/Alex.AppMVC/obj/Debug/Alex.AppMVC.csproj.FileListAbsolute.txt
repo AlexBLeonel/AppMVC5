@@ -248,3 +248,12 @@ D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\obj\Debug\Alex.AppMVC
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\obj\Debug\Alex.AppMVC.csproj.CopyComplete
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\obj\Debug\Alex.AppMVC.dll
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\obj\Debug\Alex.AppMVC.pdb
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Alex.Business.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\FluentValidation.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Alex.Business.pdb
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\FluentValidation.xml
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Alex.Infra.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\AutoMapper.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Alex.Infra.pdb
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Alex.Infra.dll.config
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\AutoMapper.xml
