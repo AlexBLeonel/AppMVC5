@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Alex.Business.Models.Fornecedores.Services {
-    interface IFornecedorService : IDisposable {
+    public interface IFornecedorService : IDisposable {
         Task Add(Fornecedor fornecedor);
         Task Update(Fornecedor fornecedor);
         Task Remove(Guid id);

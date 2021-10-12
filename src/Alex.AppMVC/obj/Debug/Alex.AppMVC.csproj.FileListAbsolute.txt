@@ -257,3 +257,15 @@ D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\AutoMapper.dll
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Alex.Infra.pdb
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Alex.Infra.dll.config
 D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\AutoMapper.xml
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\SimpleInjector.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\SimpleInjector.Integration.Web.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\SimpleInjector.Integration.Web.Mvc.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\System.Threading.Tasks.Extensions.dll
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\SimpleInjector.xml
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\SimpleInjector.Integration.Web.xml
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\SimpleInjector.Integration.Web.Mvc.xml
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Dev\Repositórios\Outros\Cursos\appMVC5\src\Alex.AppMVC\bin\System.Threading.Tasks.Extensions.xml

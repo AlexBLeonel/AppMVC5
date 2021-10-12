@@ -5,9 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using Alex.Infra.Data.Context;
 
 namespace Alex.Infra.Data.Repository {
-    public class FornecedorRepository : Repository<Fornecedor>, IFornecedorRepository {
+    public class FornecedorRepository :  Repository<Fornecedor>, IFornecedorRepository {
+        public FornecedorRepository(AppDBContext context) : base(context) { }
+
         public async Task<Fornecedor> GetFornecedorEndereco(Guid id) {
             return await Db.Fornecedores.AsNoTracking()
                 .Include(f => f.Endereco).FirstOrDefaultAsync(f => f.Id == id);

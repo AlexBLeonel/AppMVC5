@@ -8,7 +8,7 @@ using System.Reflection;
 
 namespace Alex.AppMVC.App_Start {
     public class AutoMapperConfig {
-        public MapperConfiguration GetMapperConfiguration() {
+        public static MapperConfiguration GetMapperConfiguration() {
             var profiles = Assembly.GetExecutingAssembly()
                 .GetTypes()
                 .Where(x => typeof(Profile).IsAssignableFrom(x));

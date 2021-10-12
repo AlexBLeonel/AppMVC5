@@ -21,8 +21,8 @@ namespace Alex.Infra.Data.Repository {
         protected readonly AppDBContext Db; // Acesso ao contexto
         protected readonly DbSet<TEntity> DbSet; // Atalho para a entidade
 
-        protected Repository() {
-            Db = new AppDBContext();
+        protected Repository(AppDBContext db) {
+            Db = db;
             DbSet = Db.Set<TEntity>();
         }
 

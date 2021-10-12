@@ -12,8 +12,10 @@ namespace Alex.AppMVC.Controllers {
         private readonly IEnderecoRepository _enderecoRepository;
         private readonly IMapper _mapper;
 
-        public EnderecosController() {
-
+        public EnderecosController(IEnderecoRepository enderecoRepository,
+                                    IMapper mapper) {
+            _enderecoRepository = enderecoRepository;
+            _mapper             = mapper;
         }
 
         [Route("enderecos")]

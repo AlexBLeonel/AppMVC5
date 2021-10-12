@@ -16,9 +16,12 @@ namespace Alex.AppMVC.Controllers {
         private readonly IProdutoService _produtoService;
         private readonly IMapper _mapper;
 
-        public ProdutosController() {
-            _produtoRepository = new ProdutoRepository();
-            _produtoService    = new ProdutoService(_produtoRepository, new Notifier());
+        public ProdutosController(IProdutoRepository produtoRepository,
+                                  IProdutoService produtoService,
+                                  IMapper mapper) {
+            _produtoRepository = produtoRepository;
+            _produtoService    = produtoService;
+            _mapper            = mapper;
         }
 
         [Route("produtos")]

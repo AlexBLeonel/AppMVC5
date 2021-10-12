@@ -5,9 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using Alex.Business.Models.Produtos;
+using Alex.Infra.Data.Context;
 
 namespace Alex.Infra.Data.Repository {
     public class ProdutoRepository : Repository<Produto>, IProdutoRepository {
+        public ProdutoRepository(AppDBContext context)  : base(context) { }
+
         public async Task<Produto> GetProdutoFornecedor(Guid id) {
             return await Db.Produtos.AsNoTracking()
                 .Include(p => p.Fornecedor)
