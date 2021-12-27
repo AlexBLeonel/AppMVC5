@@ -34,16 +34,16 @@ namespace Alex.AppMVC.App_Start {
 
         private static void InitializeContainer(Container container) {
             #region LyfeStyle Singleton
-            // Uma única instância por aplicação.
-            // Não deve ser utilizado para objetos que realizam operações no Bando de Dados
+                // Uma única instância por aplicação.
+                // Não deve ser utilizado para objetos que realizam operações no Bando de Dados
             #endregion
             #region LyfeStyle Transient
-            // Cria uma nova instância para cada injeção de dependência.
+                // Cria uma nova instância para cada injeção de dependência.
             #endregion
             #region LyfeStyle Scoped
-            // Só existe em contextos WEB
-            // Cria uma nova instância por Request
-            // Ideal para aplicações WEB
+                // Só existe em contextos WEB
+                // Cria uma nova instância por Request
+                // Ideal para aplicações WEB
             #endregion
 
             container.Register<AppDBContext>(Lifestyle.Scoped);

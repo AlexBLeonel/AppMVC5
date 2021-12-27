@@ -22,5 +22,9 @@ namespace Alex.AppMVC.Models {
         public static ApplicationDbContext Create() {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Alex.AppMVC.ViewModels.FornecedorViewModel> FornecedorViewModels {
+            get; set;
+        }
     }
 }

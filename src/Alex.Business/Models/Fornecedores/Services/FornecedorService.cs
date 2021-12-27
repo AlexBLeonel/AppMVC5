@@ -11,11 +11,11 @@ namespace Alex.Business.Models.Fornecedores.Services {
         private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IEnderecoRepository _enderecoRepository;
 
-        public FornecedorService(IFornecedorRepository fornecedorRepository, 
+        public FornecedorService(IFornecedorRepository fornecedorRepository,
                                  IEnderecoRepository enderecoRepository,
                                  INotifier notifier) : base(notifier) {
             _fornecedorRepository = fornecedorRepository;
-            _enderecoRepository   = enderecoRepository;
+            _enderecoRepository = enderecoRepository;
         }
 
         public async Task Add(Fornecedor fornecedor) {
@@ -40,7 +40,7 @@ namespace Alex.Business.Models.Fornecedores.Services {
                 if (fornecedor.Endereco != null) {
                     await _enderecoRepository.Delete(fornecedor.Endereco.Id);
                 }
-                await _fornecedorRepository.Delete(id); 
+                await _fornecedorRepository.Delete(id);
             }
         }
 
@@ -59,12 +59,10 @@ namespace Alex.Business.Models.Fornecedores.Services {
         public async Task<bool> FornecedorAlreadyExists(Fornecedor fornecedor) {
             var check = await _fornecedorRepository.Search(f => f.Documento == fornecedor.Documento && f.Id != fornecedor.Id);
 
-            if (check.Any())
-            {
+            if (check.Any()) {
                 Notify("O documento informado já pertence a outro fornecedor.");
                 return true;
-            } else
-            {
+            } else {
                 return false;
             }
         }

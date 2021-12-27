@@ -1,5 +1,5 @@
-﻿using Alex.Business.Models.Fornecedores;
-using Alex.Business.ViewModels;
+﻿using Alex.AppMVC.ViewModels;
+using Alex.Business.Models.Fornecedores;
 using AutoMapper;
 using System;
 using System.Data.Entity;
@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace Alex.AppMVC.Controllers {
-    public class EnderecosController : Controller {
+    public class EnderecosController : BaseController {
         private readonly IEnderecoRepository _enderecoRepository;
         private readonly IMapper _mapper;
 
         public EnderecosController(IEnderecoRepository enderecoRepository,
-                                    IMapper mapper) {
+                                   IMapper mapper) {
             _enderecoRepository = enderecoRepository;
             _mapper             = mapper;
         }
@@ -43,6 +43,7 @@ namespace Alex.AppMVC.Controllers {
         public async Task<ActionResult> Create(EnderecoViewModel enderecoViewModel) {
             if (ModelState.IsValid) {
                 var endereco = _mapper.Map<Endereco>(enderecoViewModel);
+                endereco.Created_at = DateTime.UtcNow;
                 await _enderecoRepository.Add(endereco);
                 return RedirectToAction("Index");
             }

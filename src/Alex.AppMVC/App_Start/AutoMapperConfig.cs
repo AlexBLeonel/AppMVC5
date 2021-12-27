@@ -1,6 +1,6 @@
-﻿using Alex.Business.Models.Fornecedores;
+﻿using Alex.AppMVC.ViewModels;
+using Alex.Business.Models.Fornecedores;
 using Alex.Business.Models.Produtos;
-using Alex.Business.ViewModels;
 using AutoMapper;
 using System;
 using System.Linq;

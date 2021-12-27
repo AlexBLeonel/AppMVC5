@@ -1,8 +1,6 @@
-﻿using Alex.Business.Core.Notifications;
+﻿using Alex.AppMVC.ViewModels;
 using Alex.Business.Models.Produtos;
 using Alex.Business.Models.Produtos.Services;
-using Alex.Business.ViewModels;
-using Alex.Infra.Data.Repository;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -11,7 +9,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace Alex.AppMVC.Controllers {
-    public class ProdutosController : Controller {
+    public class ProdutosController : BaseController {
         private readonly IProdutoRepository _produtoRepository;
         private readonly IProdutoService _produtoService;
         private readonly IMapper _mapper;
@@ -56,7 +54,7 @@ namespace Alex.AppMVC.Controllers {
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create(ProdutoViewModel produtoViewModel) {
             if (ModelState.IsValid) {
-                await _produtoRepository.Add(_mapper.Map<Produto>(produtoViewModel));
+                await _produtoService.Add(_mapper.Map<Produto>(produtoViewModel));
                 return RedirectToAction("Index");
             }
             return View(produtoViewModel);
@@ -80,7 +78,7 @@ namespace Alex.AppMVC.Controllers {
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(ProdutoViewModel produtoViewModel) {
             if (ModelState.IsValid) {
-                await _produtoRepository.Update(_mapper.Map<Produto>(produtoViewModel));
+                await _produtoService.Update(_mapper.Map<Produto>(produtoViewModel));
                 return RedirectToAction("Index");
             }
             return View(produtoViewModel);
@@ -109,7 +107,7 @@ namespace Alex.AppMVC.Controllers {
                 return HttpNotFound();
             }
 
-            await _produtoRepository.Delete(id);
+            await _produtoService.Remove(id);
             return RedirectToAction("Index");
         }
 

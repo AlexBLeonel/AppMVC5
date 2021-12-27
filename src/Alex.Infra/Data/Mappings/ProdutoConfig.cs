@@ -11,28 +11,20 @@ namespace Alex.Infra.Data.Mappings {
         public ProdutoConfig() {
             HasKey(p => p.Id);
 
-            Property(p => p.Nome)
-                .IsRequired();
+            Property(p => p.Nome).IsRequired();
             // Tamanho definido genericamente no contexto AppDB
 
-            Property(p => p.Valor)
-                .IsRequired();
+            Property(p => p.Valor).IsRequired();
+            Property(p => p.Status).IsRequired();
+            Property(p => p.Descricao).IsRequired().HasMaxLength(1000);
+            Property(p => p.Imagem).IsRequired().HasMaxLength(100);
 
-            Property(p => p.Status)
-                .IsRequired();
+            // Define o relacionamento para muitos (N)
+            HasRequired(p => p.Fornecedor).WithMany(f => f.Produtos).HasForeignKey(p => p.FornecedorId);
 
-            Property(p => p.Descricao)
-                .IsRequired()
-                .HasMaxLength(1000);
-
-            Property(p => p.Imagem)
-                .IsRequired()
-                .HasMaxLength(100);
-
-            HasRequired(p => p.Fornecedor)
-                // Define o relacionamento para muitos (N)
-                .WithMany(f => f.Produtos)
-                .HasForeignKey(p => p.FornecedorId);
+            Property(p => p.Created_at).IsRequired();
+            Property(p => p.Updated_at).IsOptional();
+            Property(p => p.Deleted_at).IsOptional();
 
             ToTable("Produtos");
 

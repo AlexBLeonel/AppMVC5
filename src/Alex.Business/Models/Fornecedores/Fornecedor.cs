@@ -10,7 +10,6 @@ namespace Alex.Business.Models.Fornecedores {
         public TipoFornecedor Tipo { get; set; }
         public Endereco Endereco { get; set; }
         public bool Status { get; set; }
-        public DateTime Deleted_at { get; set; }
 
         /* EF Relations*/
         public ICollection<Produto> Produtos { get; set; }

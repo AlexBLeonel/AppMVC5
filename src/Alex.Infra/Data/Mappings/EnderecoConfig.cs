@@ -11,31 +11,18 @@ namespace Alex.Infra.Data.Mappings {
         public EnderecoConfig() {
             HasKey(e => e.Id);
 
-            Property(e => e.Logradouro)
-                .IsRequired()
-                .HasMaxLength(200);
+            Property(e => e.Logradouro).IsRequired().HasMaxLength(200);
+            Property(e => e.Numero).IsRequired().HasMaxLength(10);
+            Property(e => e.Complemento).HasMaxLength(50);
+            Property(e => e.Bairro).IsRequired();
+            Property(e => e.Cidade).IsRequired();
+            Property(e => e.Estado).IsRequired();
+            Property(e => e.CEP).IsRequired().HasMaxLength(8).IsFixedLength();
 
-            Property(e => e.Numero)
-                .IsRequired()
-                .HasMaxLength(10);
-
-            Property(e => e.Complemento)
-                .HasMaxLength(50);
-
-            Property(e => e.Bairro)
-                .IsRequired();
-
-            Property(e => e.Cidade)
-                .IsRequired();
-
-            Property(e => e.Estado)
-                .IsRequired();
-
-            Property(e => e.CEP)
-                .IsRequired()
-                .HasMaxLength(8)
-                .IsFixedLength();
-
+            Property(e => e.Crated_at).IsOptional();
+            Property(e => e.Updated_at).IsOptional();
+            Property(e => e.Deleted_at).IsOptional();
+            
             ToTable("Enderecos");
         }
     }

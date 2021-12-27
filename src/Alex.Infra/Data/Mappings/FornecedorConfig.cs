@@ -14,22 +14,20 @@ namespace Alex.Infra.Data.Mappings {
         public FornecedorConfig() {
             HasKey(f => f.Id);
 
-            Property(f => f.Nome)
-                .IsRequired();
+            Property(f => f.Nome).IsRequired();
 
             Property(f => f.Documento)
                 .IsRequired()
                 .HasMaxLength(14)
                 .HasColumnAnnotation("Index_Documento", 
-                    new IndexAnnotation (
-                        new IndexAttribute { IsUnique = true } ));
+                    new IndexAnnotation ( new IndexAttribute { IsUnique = true } ));
 
-            HasRequired(f => f.Endereco)
-                // Define o relacionamento para 1
-                .WithRequiredPrincipal(e => e.Fornecedor);
+            // Define o relacionamento para 1 
+            HasRequired(f => f.Endereco).WithRequiredPrincipal(e => e.Fornecedor);
 
-            Property(f => f.Deleted_at)
-                .IsOptional();
+            Property(f => f.Crated_at).IsRequired();
+            Property(f => f.Updated_at).IsOptional();
+            Property(f => f.Deleted_at).IsOptional();
 
             ToTable("Fornecedores");
         }

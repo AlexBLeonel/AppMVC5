@@ -82,9 +82,6 @@
     <Compile Include="Models\Produtos\Services\ProdutoService.cs" />
     <Compile Include="Models\Produtos\Validations\ProdutoValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\EnderecoViewModel.cs" />
-    <Compile Include="ViewModels\FornecedorViewModel.cs" />
-    <Compile Include="ViewModels\ProdutoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

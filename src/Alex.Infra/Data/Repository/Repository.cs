@@ -35,13 +35,16 @@ namespace Alex.Infra.Data.Repository {
         }
 
         public virtual async Task Add(TEntity entity) {
+            entity.Created_at = DateTime.UtcNow;
             DbSet.Add(entity);
             await SaveChanges();
         }
 
         public virtual async Task Delete(Guid id) {
             //DbSet.Remove(await DbSet.FindAsync(id));
-            Db.Entry(new TEntity { Id = id }).State = EntityState.Deleted;
+            var entry = Db.Entry(new TEntity { Id = id });
+            entry.State = EntityState.Deleted;
+            entry.Entity.Deleted_at = DateTime.UtcNow;
             await SaveChanges();
         }
 
@@ -50,6 +53,7 @@ namespace Alex.Infra.Data.Repository {
         }
 
         public virtual async Task Update(TEntity entity) {
+            entity.Updated_at = DateTime.UtcNow;
             Db.Entry(entity).State = EntityState.Modified;
             await SaveChanges();
         }
